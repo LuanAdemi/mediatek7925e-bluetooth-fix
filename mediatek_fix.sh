@@ -53,13 +53,11 @@ if [[ "$1" == "--apply" ]]; then
 
     for file in "${MATCHED_FILES[@]}"; do
         echo "Processing $file ..."
-        cp "$file" "$file.bak"   # Backup once
 
         # Comment the block beginning with usb:v0489pE111 until blank line
         sed -i '/^usb:v0489pE111/,/^$/ s/^\([^#]\)/# \1/' "$file"
     done
 
-    echo -e "${GREEN}Fix applied. Backup files (*.bak) created.${NC}"
     exit 0
 fi
 
@@ -72,11 +70,6 @@ if [[ "$1" == "--undo" ]]; then
 
     for file in "${MATCHED_FILES[@]}"; do
         echo "Processing $file ..."
-
-        if [[ ! -f "$file.bak" ]]; then
-            echo -e "${RED}Warning: No backup found for $file — undoing by removing comment markers only.${NC}"
-        fi
-
         # Uncomment previously commented block
         sed -i '/^# usb:v0489pE111/,/^$/ s/^# //' "$file"
     done
@@ -84,3 +77,11 @@ if [[ "$1" == "--undo" ]]; then
     echo -e "${GREEN}Undo complete.${NC}"
     exit 0
 fi
+
+# update hwdb
+echo -e "${YELLOW}Updating hwdb...${NC}"
+udevadm hwdb --update
+udevadm trigger
+
+systemd-hwdb update
+
