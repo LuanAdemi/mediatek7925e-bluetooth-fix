@@ -58,7 +58,6 @@ if [[ "$1" == "--apply" ]]; then
         sed -i '/^usb:v0489pE111/,/^$/ s/^\([^#]\)/# \1/' "$file"
     done
 
-    exit 0
 fi
 
 
@@ -75,7 +74,6 @@ if [[ "$1" == "--undo" ]]; then
     done
 
     echo -e "${GREEN}Undo complete.${NC}"
-    exit 0
 fi
 
 # update hwdb
