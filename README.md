@@ -2,9 +2,6 @@
 
 A fix for MediaTek WiFi/Bluetooth combo cards that are incorrectly identified as media devices, causing GVFS/GIO to interfere with Bluetooth functionality. This README is intended to give a comprehensive explanation of the issue and the script. If you need more information feel free to open an issue.
 
-## Affected Devices
-An incomplete list of devices that are affected by this issue (having the wifi card installed) can be found [here](https://github.com/LuanAdemi/mediatek7925e-bluetooth-fix/blob/main/affecteddevices.md).
-
 ## The Problem
 
 Some MediaTek WiFi/Bluetooth combo cards (specifically vendor ID `0489`, device ID `e111`) are being misidentified by Linux system components. When connected, the device is incorrectly recognized as:
@@ -42,6 +39,8 @@ This fix is specifically for:
 - **Device ID:** e111
 - **Chip:** MediaTek WiFi/Bluetooth combo card
 - **Common in:** Various laptop models with integrated wireless cards
+
+An incomplete list of devices that are affected by this issue (having the wifi card installed) can be found [here](https://github.com/LuanAdemi/mediatek7925e-bluetooth-fix/blob/main/affecteddevices.md).
 
 
 ## Installation
