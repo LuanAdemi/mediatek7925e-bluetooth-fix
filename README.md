@@ -81,6 +81,7 @@ Then unplug/replug the device or reboot.
 
 **Tested on:**
 - Ubuntu 25.04
+- Ubuntu 25.10
 - Fedora 43
 
 ## Credits

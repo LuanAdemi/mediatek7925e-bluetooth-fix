@@ -3,3 +3,4 @@ The following list includes all affected devices reported by the community. If y
 
 ## Lenovo
 * IdeaPad Pro 5 14AKP10
+* Yoga Pro 7 14ASP10
