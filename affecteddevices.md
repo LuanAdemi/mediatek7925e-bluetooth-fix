@@ -6,3 +6,4 @@ The following list includes all affected devices reported by the community. If y
 * Yoga Pro 7 14ASP10
 * ThinkStation P8 (AMD platform）
 * Legion Pro 5 16IAX10
+* Legion Pro 5 16AFR10
