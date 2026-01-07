@@ -1,4 +1,4 @@
-> A fix has been introduced upstream in libmtp (see [here](https://github.com/libmtp/libmtp/issues/346)).
+> A fix has been introduced upstream in libmtp (see [here](https://github.com/libmtp/libmtp/issues/346) and [here](https://github.com/LuanAdemi/mediatek7925e-bluetooth-fix/issues/8#issue-3787960936))
 
 # MediaTek WiFi/Bluetooth Combo Card Fix
 
