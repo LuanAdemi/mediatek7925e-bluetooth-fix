@@ -8,3 +8,5 @@ The following list includes all affected devices reported by the community. If y
 * ThinkStation P8 (AMD platform）
 * Legion Pro 5 16IAX10
 * Legion Pro 5 16AFR10
+* Legion 5 15AKP10
+
